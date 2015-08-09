@@ -77,11 +77,8 @@
 		3DC1ADDA1B77B23E0022C821 /* PINKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */,
-				3DC1ADDF1B77B23E0022C821 /* ViewController.swift */,
 				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
-				3DC1ADE41B77B23E0022C821 /* Images.xcassets */,
-				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
+				3DC1ADDF1B77B23E0022C821 /* ViewController.swift */,
 				3DC1ADDB1B77B23E0022C821 /* Supporting Files */,
 			);
 			path = PINKeeper;
@@ -90,7 +87,10 @@
 		3DC1ADDB1B77B23E0022C821 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */,
+				3DC1ADE41B77B23E0022C821 /* Images.xcassets */,
 				3DC1ADDC1B77B23E0022C821 /* Info.plist */,
+				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
