@@ -13,6 +13,7 @@
 		3DC1ADE51B77B23E0022C821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE41B77B23E0022C821 /* Images.xcassets */; };
 		3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */; };
 		3DC1ADF41B77B23E0022C821 /* PINKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */; };
+		3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3DC1ADED1B77B23E0022C821 /* PINKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADF21B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINKeeperTests.swift; sourceTree = "<group>"; };
+		3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
+				3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */,
 				3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */,
 				3DC1ADDB1B77B23E0022C821 /* Supporting Files */,
 			);
@@ -214,6 +217,7 @@
 			files = (
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
+				3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				3DC1ADF91B77B23E0022C821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DC1ADFA1B77B23E0022C821 /* Build configuration list for PBXNativeTarget "PINKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3DC1ADFC1B77B23E0022C821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

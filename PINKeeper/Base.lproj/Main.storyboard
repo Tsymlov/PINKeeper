@@ -18,10 +18,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aph-Fc-W56"/>
+                    <connections>
+                        <segue destination="h2o-Bl-tY5" kind="show" identifier="Show PINs" id="Qj6-td-9Uj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1173" y="389"/>
+        </scene>
+        <!--PINs View Controller-->
+        <scene sceneID="7aO-NE-DD9">
+            <objects>
+                <viewController id="h2o-Bl-tY5" userLabel="PINs View Controller" customClass="PINsViewController" customModule="PINKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vdw-jt-J3f"/>
+                        <viewControllerLayoutGuide type="bottom" id="bPn-Me-ikO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BIN-wR-nxn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Df5-yf-dj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pgs-wX-9vu">
