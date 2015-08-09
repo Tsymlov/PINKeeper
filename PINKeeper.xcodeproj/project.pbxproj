@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */; };
+		3DC1ADE01B77B23E0022C821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDF1B77B23E0022C821 /* ViewController.swift */; };
+		3DC1ADE31B77B23E0022C821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE11B77B23E0022C821 /* Main.storyboard */; };
+		3DC1ADE51B77B23E0022C821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE41B77B23E0022C821 /* Images.xcassets */; };
+		3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */; };
+		3DC1ADF41B77B23E0022C821 /* PINKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC1ADEE1B77B23E0022C821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC1ADD01B77B23E0022C821 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC1ADD71B77B23E0022C821;
+			remoteInfo = PINKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC1ADD81B77B23E0022C821 /* PINKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC1ADDC1B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DC1ADDF1B77B23E0022C821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC1ADE21B77B23E0022C821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC1ADE41B77B23E0022C821 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DC1ADE71B77B23E0022C821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3DC1ADED1B77B23E0022C821 /* PINKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC1ADF21B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINKeeperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC1ADD51B77B23E0022C821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC1ADEA1B77B23E0022C821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC1ADCF1B77B23E0022C821 = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADDA1B77B23E0022C821 /* PINKeeper */,
+				3DC1ADF01B77B23E0022C821 /* PINKeeperTests */,
+				3DC1ADD91B77B23E0022C821 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC1ADD91B77B23E0022C821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADD81B77B23E0022C821 /* PINKeeper.app */,
+				3DC1ADED1B77B23E0022C821 /* PINKeeperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC1ADDA1B77B23E0022C821 /* PINKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */,
+				3DC1ADDF1B77B23E0022C821 /* ViewController.swift */,
+				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
+				3DC1ADE41B77B23E0022C821 /* Images.xcassets */,
+				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
+				3DC1ADDB1B77B23E0022C821 /* Supporting Files */,
+			);
+			path = PINKeeper;
+			sourceTree = "<group>";
+		};
+		3DC1ADDB1B77B23E0022C821 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADDC1B77B23E0022C821 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC1ADF01B77B23E0022C821 /* PINKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */,
+				3DC1ADF11B77B23E0022C821 /* Supporting Files */,
+			);
+			path = PINKeeperTests;
+			sourceTree = "<group>";
+		};
+		3DC1ADF11B77B23E0022C821 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADF21B77B23E0022C821 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC1ADD71B77B23E0022C821 /* PINKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC1ADF71B77B23E0022C821 /* Build configuration list for PBXNativeTarget "PINKeeper" */;
+			buildPhases = (
+				3DC1ADD41B77B23E0022C821 /* Sources */,
+				3DC1ADD51B77B23E0022C821 /* Frameworks */,
+				3DC1ADD61B77B23E0022C821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINKeeper;
+			productName = PINKeeper;
+			productReference = 3DC1ADD81B77B23E0022C821 /* PINKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC1ADEC1B77B23E0022C821 /* PINKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC1ADFA1B77B23E0022C821 /* Build configuration list for PBXNativeTarget "PINKeeperTests" */;
+			buildPhases = (
+				3DC1ADE91B77B23E0022C821 /* Sources */,
+				3DC1ADEA1B77B23E0022C821 /* Frameworks */,
+				3DC1ADEB1B77B23E0022C821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC1ADEF1B77B23E0022C821 /* PBXTargetDependency */,
+			);
+			name = PINKeeperTests;
+			productName = PINKeeperTests;
+			productReference = 3DC1ADED1B77B23E0022C821 /* PINKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC1ADD01B77B23E0022C821 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Alexey Tsymlov";
+				TargetAttributes = {
+					3DC1ADD71B77B23E0022C821 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3DC1ADEC1B77B23E0022C821 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3DC1ADD71B77B23E0022C821;
+					};
+				};
+			};
+			buildConfigurationList = 3DC1ADD31B77B23E0022C821 /* Build configuration list for PBXProject "PINKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC1ADCF1B77B23E0022C821;
+			productRefGroup = 3DC1ADD91B77B23E0022C821 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC1ADD71B77B23E0022C821 /* PINKeeper */,
+				3DC1ADEC1B77B23E0022C821 /* PINKeeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC1ADD61B77B23E0022C821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC1ADE31B77B23E0022C821 /* Main.storyboard in Resources */,
+				3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */,
+				3DC1ADE51B77B23E0022C821 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC1ADEB1B77B23E0022C821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC1ADD41B77B23E0022C821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC1ADE01B77B23E0022C821 /* ViewController.swift in Sources */,
+				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC1ADE91B77B23E0022C821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC1ADF41B77B23E0022C821 /* PINKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC1ADEF1B77B23E0022C821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC1ADD71B77B23E0022C821 /* PINKeeper */;
+			targetProxy = 3DC1ADEE1B77B23E0022C821 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC1ADE11B77B23E0022C821 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC1ADE21B77B23E0022C821 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC1ADE71B77B23E0022C821 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC1ADF51B77B23E0022C821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DC1ADF61B77B23E0022C821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC1ADF81B77B23E0022C821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PINKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DC1ADF91B77B23E0022C821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PINKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DC1ADFB1B77B23E0022C821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PINKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PINKeeper.app/PINKeeper";
+			};
+			name = Debug;
+		};
+		3DC1ADFC1B77B23E0022C821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PINKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PINKeeper.app/PINKeeper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC1ADD31B77B23E0022C821 /* Build configuration list for PBXProject "PINKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC1ADF51B77B23E0022C821 /* Debug */,
+				3DC1ADF61B77B23E0022C821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC1ADF71B77B23E0022C821 /* Build configuration list for PBXNativeTarget "PINKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC1ADF81B77B23E0022C821 /* Debug */,
+				3DC1ADF91B77B23E0022C821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DC1ADFA1B77B23E0022C821 /* Build configuration list for PBXNativeTarget "PINKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC1ADFB1B77B23E0022C821 /* Debug */,
+				3DC1ADFC1B77B23E0022C821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC1ADD01B77B23E0022C821 /* Project object */;
+}
