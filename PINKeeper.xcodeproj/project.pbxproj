@@ -14,6 +14,7 @@
 		3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */; };
 		3DC1ADF41B77B23E0022C821 /* PINKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */; };
 		3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */; };
+		3DC1AE041B77C2130022C821 /* ViewController+Allerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3DC1ADF21B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINKeeperTests.swift; sourceTree = "<group>"; };
 		3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsViewController.swift; sourceTree = "<group>"; };
+		3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Allerts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,9 @@
 		3DC1ADDA1B77B23E0022C821 /* PINKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
-				3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */,
-				3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */,
+				3DC1AE071B77C2710022C821 /* Views */,
+				3DC1AE061B77C2640022C821 /* Controllers */,
+				3DC1AE051B77C2520022C821 /* Helpers */,
 				3DC1ADDB1B77B23E0022C821 /* Supporting Files */,
 			);
 			path = PINKeeper;
@@ -93,7 +95,6 @@
 				3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */,
 				3DC1ADE41B77B23E0022C821 /* Images.xcassets */,
 				3DC1ADDC1B77B23E0022C821 /* Info.plist */,
-				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +114,32 @@
 				3DC1ADF21B77B23E0022C821 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC1AE051B77C2520022C821 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3DC1AE061B77C2640022C821 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */,
+				3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3DC1AE071B77C2710022C821 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
+				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC1AE041B77C2130022C821 /* ViewController+Allerts.swift in Sources */,
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
 				3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */,
