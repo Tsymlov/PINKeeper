@@ -13,9 +13,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AuthBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cTm-va-ca0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cTm-va-ca0" secondAttribute="trailing" id="N7P-SV-Qv1"/>
+                            <constraint firstItem="cTm-va-ca0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V9h-BK-BJq"/>
+                            <constraint firstItem="cTm-va-ca0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCy-t0-rFf"/>
+                            <constraint firstItem="cTm-va-ca0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gZS-cC-xPV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aph-Fc-W56"/>
                     <connections>
@@ -35,7 +46,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bPn-Me-ikO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BIN-wR-nxn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -47,7 +58,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Pgs-wX-9vu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljX-EW-7hg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ljX-EW-7hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ziI-2K-vvD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -63,4 +74,7 @@
             <point key="canvasLocation" x="467" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AuthBackground" width="1200" height="800"/>
+    </resources>
 </document>
