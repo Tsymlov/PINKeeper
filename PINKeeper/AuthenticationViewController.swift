@@ -11,6 +11,8 @@ import LocalAuthentication
 
 class AuthenticationViewController: UIViewController {
     
+    @IBOutlet var digitButtons: [UIButton]!
+    
     let context = LAContext()
 
     override func viewDidLoad() {
@@ -43,6 +45,16 @@ class AuthenticationViewController: UIViewController {
     
     private func checkIfTouchIDIsAvailable(inout error: NSError?)->Bool{
         return context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        setAllDigitButtonsRounded()
+    }
+    
+    private func setAllDigitButtonsRounded(){
+        for button in digitButtons{
+            button.roundedBorder = true
+        }
     }
 }
 
