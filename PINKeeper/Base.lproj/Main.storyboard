@@ -26,7 +26,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FSq-EM-Whj" secondAttribute="height" multiplier="1:1" id="gPs-Q6-JdC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,7 +38,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iPW-Wt-xr2" secondAttribute="height" multiplier="1:1" id="hOr-Og-nfr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +50,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b0p-bz-mb9" secondAttribute="height" multiplier="1:1" id="Rcc-Ix-0BD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ibx-Ts-8FZ" secondAttribute="height" multiplier="1:1" id="MiL-U3-cyV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +74,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N9A-jQ-ynD" secondAttribute="height" multiplier="1:1" id="L5X-cm-3to"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,7 +86,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="39y-V1-JES" secondAttribute="height" multiplier="1:1" id="Thv-wh-wxl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,7 +98,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="k27-9a-6ep" secondAttribute="height" multiplier="1:1" id="Mgn-SP-Gpo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,7 +110,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0yi-ky-aVN" secondAttribute="height" multiplier="1:1" id="Njc-hJ-ft2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,7 +122,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Kdg-AT-z1r" secondAttribute="height" multiplier="1:1" id="hwD-5y-xLF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -134,7 +134,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9Iq-rN-r11" secondAttribute="height" multiplier="1:1" id="WlE-dK-VQr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
