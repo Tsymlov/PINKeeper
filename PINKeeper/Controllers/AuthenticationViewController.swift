@@ -11,6 +11,12 @@ import LocalAuthentication
 
 class AuthenticationViewController: UIViewController {
     
+    struct Constants {
+        static let DigitButtonWidthToTitleFontSizeRatio: CGFloat = 0.45
+    }
+    
+    // MARK: - Properties
+    
     @IBOutlet var digitButtons: [UIButton]!
     
     let context = LAContext()
@@ -49,12 +55,23 @@ class AuthenticationViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         setAllDigitButtonsRounded()
+        refreshDigitButtonsFontSizes()
     }
     
     private func setAllDigitButtonsRounded(){
         for button in digitButtons{
             button.roundedBorder = true
         }
+    }
+    
+    private func refreshDigitButtonsFontSizes(){
+        let buttonWidth = digitButtons[0].frame.size.width
+        let newFontSize = buttonWidth * Constants.DigitButtonWidthToTitleFontSizeRatio
+        for button in digitButtons{
+            button.titleLabel?.font = UIFont.systemFontOfSize(newFontSize, weight: UIFontWeightThin)
+        }
+        println("Digit buttons font size: \(digitButtons[0].titleLabel?.font?.pointSize)")
+        println("Digit buttons width: \(buttonWidth)")
     }
 }
 
