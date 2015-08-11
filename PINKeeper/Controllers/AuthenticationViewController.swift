@@ -19,10 +19,15 @@ class AuthenticationViewController: UIViewController {
     
     @IBOutlet var digitButtons: [UIButton]!
     
-    let context = LAContext()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    private let context = LAContext()
+    
+    // MARK: - ViewController life cycle
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+            AppDelegate.restrictRotation = true
+        }
         authenticateUserWithTouchID()
     }
     
@@ -72,6 +77,10 @@ class AuthenticationViewController: UIViewController {
         }
         println("Digit buttons font size: \(digitButtons[0].titleLabel?.font?.pointSize)")
         println("Digit buttons width: \(buttonWidth)")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        AppDelegate.restrictRotation = false
     }
 }
 
