@@ -38,6 +38,26 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1uW-SQ-X7u" userLabel="Progress1">
+                                <rect key="frame" x="20" y="20" width="15" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-oY-yRL" userLabel="Progress2">
+                                <rect key="frame" x="43" y="20" width="15" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gz2-Jq-YFV" userLabel="Progress3">
+                                <rect key="frame" x="66" y="20" width="15" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-sX-uLR" userLabel="Progress4">
+                                <rect key="frame" x="89" y="20" width="15" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHL-oy-iQh" userLabel="Spacer (Hided)">
                                 <rect key="frame" x="239" y="121" width="121" height="56"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -278,6 +298,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="aph-Fc-W56"/>
                     <connections>
+                        <outlet property="progress1View" destination="1uW-SQ-X7u" id="68E-gF-IUu"/>
+                        <outlet property="progress2View" destination="UZu-oY-yRL" id="Eyj-wG-L7z"/>
+                        <outlet property="progress3View" destination="Gz2-Jq-YFV" id="X0n-Z7-ST5"/>
+                        <outlet property="progress4View" destination="8B2-sX-uLR" id="7kp-m1-Mac"/>
                         <outletCollection property="digitButtons" destination="FSq-EM-Whj" collectionClass="NSMutableArray" id="Et0-vV-M60"/>
                         <outletCollection property="digitButtons" destination="iPW-Wt-xr2" collectionClass="NSMutableArray" id="cnL-pH-Zvb"/>
                         <outletCollection property="digitButtons" destination="b0p-bz-mb9" collectionClass="NSMutableArray" id="uNh-Z7-Ev4"/>

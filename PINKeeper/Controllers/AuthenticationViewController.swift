@@ -18,6 +18,10 @@ class AuthenticationViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet var digitButtons: [UIButton]!
+    @IBOutlet weak var progress1View: UIView!
+    @IBOutlet weak var progress2View: UIView!
+    @IBOutlet weak var progress3View: UIView!
+    @IBOutlet weak var progress4View: UIView!
     
     private let context = LAContext()
     
@@ -61,6 +65,7 @@ class AuthenticationViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         setAllDigitButtonsRounded()
         refreshDigitButtonsFontSizes()
+        setAllProgressViewRounded()
     }
     
     private func setAllDigitButtonsRounded(){
@@ -77,6 +82,13 @@ class AuthenticationViewController: UIViewController {
         }
         println("Digit buttons font size: \(digitButtons[0].titleLabel?.font?.pointSize)")
         println("Digit buttons width: \(buttonWidth)")
+    }
+    
+    private func setAllProgressViewRounded(){
+        progress1View.roundedBorder = true
+        progress2View.roundedBorder = true
+        progress3View.roundedBorder = true
+        progress4View.roundedBorder = true
     }
     
     override func viewDidDisappear(animated: Bool) {
