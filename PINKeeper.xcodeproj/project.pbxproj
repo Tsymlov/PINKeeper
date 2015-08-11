@@ -16,7 +16,7 @@
 		3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */; };
 		3DC1AE041B77C2130022C821 /* ViewController+Allerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */; };
 		3DC1AE0B1B78F4E80022C821 /* Authentication.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */; };
-		3DC1AE0D1B79029A0022C821 /* UIButton+RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0C1B79029A0022C821 /* UIButton+RoundedBorder.swift */; };
+		3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PINsViewController.swift; path = Controllers/PINsViewController.swift; sourceTree = "<group>"; };
 		3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Allerts.swift"; path = "Helpers/ViewController+Allerts.swift"; sourceTree = "<group>"; };
 		3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Authentication.xcassets; sourceTree = "<group>"; };
-		3DC1AE0C1B79029A0022C821 /* UIButton+RoundedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+RoundedBorder.swift"; path = "Helpers/UIButton+RoundedBorder.swift"; sourceTree = "<group>"; };
+		3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+RoundedBorder.swift"; path = "Helpers/UIView+RoundedBorder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC1AE031B77C2130022C821 /* ViewController+Allerts.swift */,
-				3DC1AE0C1B79029A0022C821 /* UIButton+RoundedBorder.swift */,
+				3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC1AE041B77C2130022C821 /* ViewController+Allerts.swift in Sources */,
-				3DC1AE0D1B79029A0022C821 /* UIButton+RoundedBorder.swift in Sources */,
+				3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */,
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
 				3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */,

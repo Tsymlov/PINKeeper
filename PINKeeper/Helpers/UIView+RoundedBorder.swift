@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIButton{
-    /// If value is true the UIButton has a rounded border with 1 point of width.
-    /// Color of the border is equal to the tint color of the UIButton.
+extension UIView{
+    /// If value is true the UIView has a rounded border with 1 point of width.
+    /// Color of the border is equal to the tint color of the UIView.
     var roundedBorder: Bool{
         set(isRoundedBorder){
             if isRoundedBorder{
