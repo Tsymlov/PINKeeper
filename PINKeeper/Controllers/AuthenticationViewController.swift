@@ -135,12 +135,15 @@ class AuthenticationViewController: UIViewController {
         ++enterProgress
         passCode += sender.titleLabel?.text ?? ""
         if enterProgress == 4 {
-            // for debug
-            showAlertController(passCode)
-            passCode = ""
-            enterProgress = 0
-            // TODO: Check passcode and go to PINs
-            
+            if Authentication.checkPasscode(passCode){
+                showAlertController("Success!")// TODO: Go to PINs
+                passCode = ""
+                enterProgress = 0
+            }else{
+                showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
+                passCode = ""
+                enterProgress = 0
+            }
         }
     }
     
