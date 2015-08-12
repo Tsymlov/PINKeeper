@@ -9,12 +9,20 @@
 import UIKit
 import LocalAuthentication
 import AudioToolbox
+import UIView_Shake
 
 class AuthenticationViewController: UIViewController {
     
     struct Constants {
         static let DigitButtonWidthToTitleFontSizeRatio: CGFloat = 0.45
-        static let progressColor = UIColor.lightGrayColor()
+        struct Progress {
+            static let progressColor = UIColor.lightGrayColor()
+            struct Shaking {
+                static let speed: NSTimeInterval = 0.1
+                static let delta: CGFloat = 50
+                static let times: Int32 = 6
+            }
+        }
     }
     
     // MARK: - Properties
@@ -28,6 +36,11 @@ class AuthenticationViewController: UIViewController {
     
     private let showPINsSegueID = "Show PINs"
     private let context = LAContext()
+    
+    private var progressViews: [UIView]{
+        return [progress1View, progress2View, progress3View, progress4View]
+    }
+    
     private var passCode = ""{
         didSet{
             if passCode == "" {
@@ -45,7 +58,6 @@ class AuthenticationViewController: UIViewController {
     }
     
     private func refreshProgressViews(){
-        let progressViews = [progress1View, progress2View, progress3View, progress4View]
         for (index, progressView) in enumerate(progressViews){
             if (index+1) <= enterProgress {
                 switchOn(progressView)
@@ -56,7 +68,7 @@ class AuthenticationViewController: UIViewController {
     }
     
     private func switchOn(progressView: UIView){
-        progressView.backgroundColor = Constants.progressColor
+        progressView.backgroundColor = Constants.Progress.progressColor
     }
     
     private func switchOff(progressView: UIView){
@@ -132,10 +144,9 @@ class AuthenticationViewController: UIViewController {
     }
     
     private func setAllProgressViewRounded(){
-        progress1View.roundedBorder = true
-        progress2View.roundedBorder = true
-        progress3View.roundedBorder = true
-        progress4View.roundedBorder = true
+        for view in progressViews{
+            view.roundedBorder = true
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -158,17 +169,27 @@ class AuthenticationViewController: UIViewController {
     
     private func checkPasscode(){
         if Authentication.checkPasscode(passCode){
-            println("Success!")
+            println("Enter passcode: Success.")
             performSegueWithIdentifier(showPINsSegueID, sender: self)
         }else{
+            println("Enter passcode: Failed!")
             vibrate()
-            showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
+            shakeProgressViews()
             passCode = ""
         }
     }
     
     private func vibrate(){
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+    }
+    
+    private func shakeProgressViews(){
+        let times = Constants.Progress.Shaking.times
+        let delta = Constants.Progress.Shaking.delta
+        let speed = Constants.Progress.Shaking.speed
+        for view in progressViews{
+            view.shake(times, withDelta: delta, speed: speed)
+        }
     }
     
     @IBAction func deleteTapped(sender: UIButton) {
