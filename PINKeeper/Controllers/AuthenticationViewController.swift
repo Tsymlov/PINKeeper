@@ -55,6 +55,10 @@ class AuthenticationViewController: UIViewController {
         progressView.backgroundColor = UIColor.clearColor()
     }
     
+    private var isEnterEnded: Bool{
+        return enterProgress == 4
+    }
+    
     // MARK: - ViewController life cycle
     
     override func viewWillAppear(animated: Bool) {
@@ -134,16 +138,20 @@ class AuthenticationViewController: UIViewController {
     @IBAction func digitButtonTapped(sender: UIButton) {
         ++enterProgress
         passCode += sender.titleLabel?.text ?? ""
-        if enterProgress == 4 {
-            if Authentication.checkPasscode(passCode){
-                showAlertController("Success!")// TODO: Go to PINs
-                passCode = ""
-                enterProgress = 0
-            }else{
-                showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
-                passCode = ""
-                enterProgress = 0
-            }
+        if isEnterEnded {
+            checkPasscode()
+        }
+    }
+    
+    private func checkPasscode(){
+        if Authentication.checkPasscode(passCode){
+            showAlertController("Success!")// TODO: Go to PINs
+            passCode = ""
+            enterProgress = 0
+        }else{
+            showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
+            passCode = ""
+            enterProgress = 0
         }
     }
     
