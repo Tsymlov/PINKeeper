@@ -13,6 +13,7 @@ class AuthenticationViewController: UIViewController {
     
     struct Constants {
         static let DigitButtonWidthToTitleFontSizeRatio: CGFloat = 0.45
+        static let progressColor = UIColor.lightGrayColor()
     }
     
     // MARK: - Properties
@@ -24,6 +25,31 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var progress4View: UIView!
     
     private let context = LAContext()
+    private var enterProgress = 0 { //from 0 to 4
+        didSet{
+            enterProgress = min(max(enterProgress, 0), 4)
+            refreshProgressViews()
+        }
+    }
+    
+    private func refreshProgressViews(){
+        let progressViews = [progress1View, progress2View, progress3View, progress4View]
+        for (index, progressView) in enumerate(progressViews){
+            if (index+1) <= enterProgress {
+                switchOn(progressView)
+            }else{
+                switchOff(progressView)
+            }
+        }
+    }
+    
+    private func switchOn(progressView: UIView){
+        progressView.backgroundColor = Constants.progressColor
+    }
+    
+    private func switchOff(progressView: UIView){
+        progressView.backgroundColor = UIColor.clearColor()
+    }
     
     // MARK: - ViewController life cycle
     
@@ -94,5 +120,12 @@ class AuthenticationViewController: UIViewController {
     override func viewDidDisappear(animated: Bool) {
         AppDelegate.restrictRotation = false
     }
+    
+    // MARK: - Actions
+    
+    @IBAction func digitButtonTapped(sender: UIButton) {
+        ++enterProgress
+    }
+
 }
 
