@@ -25,6 +25,7 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var progress4View: UIView!
     @IBOutlet weak var deleteButton: UIButton!
     
+    private let showPINsSegueID = "Show PINs"
     private let context = LAContext()
     private var passCode = ""{
         didSet{
@@ -156,9 +157,8 @@ class AuthenticationViewController: UIViewController {
     
     private func checkPasscode(){
         if Authentication.checkPasscode(passCode){
-            showAlertController("Success!")// TODO: Go to PINs
-            passCode = ""
-            enterProgress = 0
+            println("Success!")
+            performSegueWithIdentifier(showPINsSegueID, sender: self)
         }else{
             showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
             passCode = ""
