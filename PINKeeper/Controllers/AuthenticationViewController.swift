@@ -23,12 +23,14 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var progress2View: UIView!
     @IBOutlet weak var progress3View: UIView!
     @IBOutlet weak var progress4View: UIView!
+    @IBOutlet weak var deleteButton: UIButton!
     
     private let context = LAContext()
     private var enterProgress = 0 { //from 0 to 4
         didSet{
             enterProgress = min(max(enterProgress, 0), 4)
             refreshProgressViews()
+            deleteButton?.hidden = enterProgress == 0
         }
     }
     
@@ -129,6 +131,10 @@ class AuthenticationViewController: UIViewController {
     
     @IBAction func digitButtonTapped(sender: UIButton) {
         ++enterProgress
+    }
+    
+    @IBAction func deleteTapped(sender: UIButton) {
+        --enterProgress
     }
 
 }

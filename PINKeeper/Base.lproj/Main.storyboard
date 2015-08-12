@@ -45,7 +45,7 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uW-SQ-X7u" userLabel="Progress1">
-                                <rect key="frame" x="239" y="110.5" width="11.5" height="11.5"/>
+                                <rect key="frame" x="239" y="111" width="11.5" height="11.5"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1uW-SQ-X7u" secondAttribute="height" multiplier="1:1" id="Q5O-aP-Gci"/>
@@ -55,14 +55,14 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="700" translatesAutoresizingMaskIntoConstraints="NO" id="mED-0S-A70" userLabel="Progress Spacer1 (Hided)">
-                                <rect key="frame" x="251" y="110.5" width="25" height="11.5"/>
+                                <rect key="frame" x="250" y="111" width="25" height="11.5"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="151" y="110.5" width="25" height="11.5"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-oY-yRL" userLabel="Progress2">
-                                <rect key="frame" x="276" y="110.5" width="11.5" height="11.5"/>
+                                <rect key="frame" x="275" y="111" width="11.5" height="11.5"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UZu-oY-yRL" secondAttribute="height" multiplier="1:1" id="pqB-Nc-GRX"/>
@@ -72,14 +72,14 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="700" translatesAutoresizingMaskIntoConstraints="NO" id="zb4-Uy-eZv" userLabel="Progress Spacer2 (Hided)">
-                                <rect key="frame" x="287" y="110.5" width="25" height="11.5"/>
+                                <rect key="frame" x="287" y="111" width="25" height="11.5"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="187" y="110.5" width="25" height="11.5"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gz2-Jq-YFV" userLabel="Progress3">
-                                <rect key="frame" x="312.5" y="110.5" width="11.5" height="11.5"/>
+                                <rect key="frame" x="312" y="111" width="11.5" height="11.5"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gz2-Jq-YFV" secondAttribute="height" multiplier="1:1" id="v2e-Sm-9Bb"/>
@@ -89,14 +89,14 @@
                                 </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="700" translatesAutoresizingMaskIntoConstraints="NO" id="iOM-z6-U8r" userLabel="Progress Spacer3 (Hided)">
-                                <rect key="frame" x="323.5" y="110.5" width="25" height="11.5"/>
+                                <rect key="frame" x="323" y="111" width="25" height="11.5"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="223" y="110.5" width="25" height="11.5"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-sX-uLR" userLabel="Progress4">
-                                <rect key="frame" x="349" y="110.5" width="11.5" height="11.5"/>
+                                <rect key="frame" x="348" y="111" width="11.5" height="11.5"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8B2-sX-uLR" secondAttribute="height" multiplier="1:1" id="rbY-QB-DVA"/>
@@ -296,6 +296,19 @@
                                     <action selector="digitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsu-nb-PaF"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Qh-KpO">
+                                <rect key="frame" x="370" y="550" width="44" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2D5-Ix-emN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -303,7 +316,6 @@
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="width" secondItem="FSq-EM-Whj" secondAttribute="width" id="0gH-P5-Obb"/>
                             <constraint firstItem="Gz2-Jq-YFV" firstAttribute="centerY" secondItem="iOM-z6-U8r" secondAttribute="centerY" id="0lQ-3u-lj6"/>
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="leading" secondItem="FSq-EM-Whj" secondAttribute="leading" constant="54" id="13k-Eo-czZ"/>
-                            <constraint firstItem="cTm-va-ca0" firstAttribute="trailing" secondItem="DfS-U7-heK" secondAttribute="trailing" id="20f-eN-Cj3"/>
                             <constraint firstItem="39y-V1-JES" firstAttribute="leading" secondItem="N9A-jQ-ynD" secondAttribute="trailing" constant="20" id="3kZ-Jo-mdM"/>
                             <constraint firstItem="zb4-Uy-eZv" firstAttribute="leading" secondItem="UZu-oY-yRL" secondAttribute="trailing" id="3n6-bn-sIk"/>
                             <constraint firstItem="mED-0S-A70" firstAttribute="bottom" secondItem="1uW-SQ-X7u" secondAttribute="bottom" id="3yb-Fa-gcX"/>
@@ -316,6 +328,7 @@
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="trailing" secondItem="uHL-oy-iQh" secondAttribute="trailing" id="5ft-sG-QbT"/>
                             <constraint firstItem="39y-V1-JES" firstAttribute="centerX" secondItem="Kdg-AT-z1r" secondAttribute="centerX" id="7gv-eB-jxz"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="centerX" secondItem="39y-V1-JES" secondAttribute="centerX" id="7ut-nQ-5IT"/>
+                            <constraint firstItem="DfS-U7-heK" firstAttribute="bottom" secondItem="cTm-va-ca0" secondAttribute="bottom" id="8ln-oq-AtQ"/>
                             <constraint firstItem="Kdg-AT-z1r" firstAttribute="top" secondItem="39y-V1-JES" secondAttribute="bottom" constant="20" id="9vQ-gs-46t"/>
                             <constraint firstItem="1uW-SQ-X7u" firstAttribute="leading" secondItem="cDH-E6-VCW" secondAttribute="leading" id="AgO-2t-sN2"/>
                             <constraint firstAttribute="centerX" secondItem="cDH-E6-VCW" secondAttribute="centerX" id="AoZ-eR-WCx"/>
@@ -330,7 +343,9 @@
                             </constraint>
                             <constraint firstItem="9Iq-rN-r11" firstAttribute="top" secondItem="0yi-ky-aVN" secondAttribute="bottom" constant="20" id="IEf-Zg-h74"/>
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="trailing" secondItem="8B2-sX-uLR" secondAttribute="trailing" id="ImI-fz-6Ev"/>
+                            <constraint firstItem="Hqn-Qh-KpO" firstAttribute="trailing" secondItem="Kdg-AT-z1r" secondAttribute="trailing" id="Ith-t7-ATf"/>
                             <constraint firstItem="zb4-Uy-eZv" firstAttribute="top" secondItem="UZu-oY-yRL" secondAttribute="top" id="JXb-df-ulZ"/>
+                            <constraint firstItem="DfS-U7-heK" firstAttribute="top" secondItem="cTm-va-ca0" secondAttribute="top" id="K56-gq-xnJ"/>
                             <constraint firstItem="N9A-jQ-ynD" firstAttribute="top" secondItem="iPW-Wt-xr2" secondAttribute="bottom" constant="20" id="KYT-gK-J5D"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="height" secondItem="Kdg-AT-z1r" secondAttribute="height" id="L0o-bg-9se"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="height" secondItem="N9A-jQ-ynD" secondAttribute="height" id="L4x-Bv-sjV"/>
@@ -340,7 +355,6 @@
                             <constraint firstAttribute="trailing" secondItem="cTm-va-ca0" secondAttribute="trailing" id="N7P-SV-Qv1"/>
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="centerX" secondItem="N9A-jQ-ynD" secondAttribute="centerX" id="NHQ-MY-TsB"/>
                             <constraint firstItem="N9A-jQ-ynD" firstAttribute="centerX" secondItem="iPW-Wt-xr2" secondAttribute="centerX" id="OBI-Dh-m4z"/>
-                            <constraint firstItem="cTm-va-ca0" firstAttribute="leading" secondItem="DfS-U7-heK" secondAttribute="leading" id="PEG-7z-qOu"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="height" secondItem="Ibx-Ts-8FZ" secondAttribute="height" id="PGk-UP-9wH"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="width" secondItem="Ibx-Ts-8FZ" secondAttribute="width" id="PRg-IF-lW1"/>
                             <constraint firstItem="8B2-sX-uLR" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="8" symbolic="YES" id="Pag-oV-BOk"/>
@@ -356,7 +370,9 @@
                             <constraint firstItem="cTm-va-ca0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCy-t0-rFf"/>
                             <constraint firstItem="9FA-0Q-Xhk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="WP9-I9-QDN"/>
                             <constraint firstItem="9FA-0Q-Xhk" firstAttribute="height" secondItem="uHL-oy-iQh" secondAttribute="height" id="WPX-eS-k9V"/>
+                            <constraint firstItem="Hqn-Qh-KpO" firstAttribute="centerY" secondItem="9Iq-rN-r11" secondAttribute="centerY" id="WdU-AQ-KgO"/>
                             <constraint firstItem="39y-V1-JES" firstAttribute="top" secondItem="b0p-bz-mb9" secondAttribute="bottom" constant="20" id="XhV-cg-SNc"/>
+                            <constraint firstItem="Hqn-Qh-KpO" firstAttribute="centerX" secondItem="Kdg-AT-z1r" secondAttribute="centerX" id="Ytf-Dh-jgU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="39y-V1-JES" secondAttribute="trailing" constant="71" id="ayQ-Fs-TYy">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
@@ -368,6 +384,7 @@
                             <constraint firstItem="Gz2-Jq-YFV" firstAttribute="leading" secondItem="zb4-Uy-eZv" secondAttribute="trailing" id="ef4-12-PBI"/>
                             <constraint firstItem="iPW-Wt-xr2" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="68" id="ek5-uW-i3K"/>
                             <constraint firstItem="uHL-oy-iQh" firstAttribute="top" secondItem="Gz2-Jq-YFV" secondAttribute="bottom" constant="8" symbolic="YES" id="fKN-3d-zFb"/>
+                            <constraint firstAttribute="bottom" secondItem="Hqn-Qh-KpO" secondAttribute="bottom" constant="20" symbolic="YES" id="gOz-86-5Bf"/>
                             <constraint firstItem="cTm-va-ca0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gZS-cC-xPV"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="height" secondItem="39y-V1-JES" secondAttribute="height" id="gbG-ny-yvT"/>
                             <constraint firstAttribute="centerY" secondItem="N9A-jQ-ynD" secondAttribute="centerY" id="hDg-F6-bcW"/>
@@ -377,8 +394,6 @@
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="leading" secondItem="9FA-0Q-Xhk" secondAttribute="leading" id="iDB-bW-usj"/>
                             <constraint firstItem="FSq-EM-Whj" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="68.5" id="iLn-sb-smj"/>
                             <constraint firstItem="uHL-oy-iQh" firstAttribute="top" secondItem="UZu-oY-yRL" secondAttribute="bottom" constant="8" symbolic="YES" id="iof-qM-ITi"/>
-                            <constraint firstItem="cTm-va-ca0" firstAttribute="top" secondItem="DfS-U7-heK" secondAttribute="top" id="j20-zh-KBJ"/>
-                            <constraint firstItem="cTm-va-ca0" firstAttribute="bottom" secondItem="DfS-U7-heK" secondAttribute="bottom" id="j31-sc-Lkn"/>
                             <constraint firstItem="UZu-oY-yRL" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="8" symbolic="YES" id="k8E-Hf-izz"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="width" secondItem="Kdg-AT-z1r" secondAttribute="width" id="kHM-Ne-ng1"/>
                             <constraint firstItem="N9A-jQ-ynD" firstAttribute="centerX" secondItem="0yi-ky-aVN" secondAttribute="centerX" id="kOI-7j-ZgN"/>
@@ -395,21 +410,25 @@
                             <constraint firstItem="Ibx-Ts-8FZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="s25-Hy-huB">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
+                            <constraint firstItem="DfS-U7-heK" firstAttribute="leading" secondItem="cTm-va-ca0" secondAttribute="leading" id="uCT-53-Re9"/>
                             <constraint firstItem="Gz2-Jq-YFV" firstAttribute="bottom" secondItem="iOM-z6-U8r" secondAttribute="bottom" id="ufF-7q-duq"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="height" secondItem="9Iq-rN-r11" secondAttribute="height" id="uoI-qx-sNC"/>
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="height" secondItem="UZu-oY-yRL" secondAttribute="height" constant="9" id="vmN-mx-JbF">
                                 <variation key="heightClass=regular-widthClass=regular" constant="12"/>
                             </constraint>
+                            <constraint firstAttribute="bottom" secondItem="Hqn-Qh-KpO" secondAttribute="bottom" constant="20" symbolic="YES" id="w4A-Ow-a1g"/>
                             <constraint firstItem="0yi-ky-aVN" firstAttribute="centerX" secondItem="9Iq-rN-r11" secondAttribute="centerX" id="wOs-kI-xqp"/>
                             <constraint firstItem="iOM-z6-U8r" firstAttribute="leading" secondItem="Gz2-Jq-YFV" secondAttribute="trailing" id="wU3-Dm-ptm"/>
                             <constraint firstItem="b0p-bz-mb9" firstAttribute="width" secondItem="0yi-ky-aVN" secondAttribute="width" id="wxu-Q5-LgT"/>
                             <constraint firstItem="UZu-oY-yRL" firstAttribute="leading" secondItem="mED-0S-A70" secondAttribute="trailing" id="wym-SD-9Ct"/>
                             <constraint firstItem="1uW-SQ-X7u" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="8" symbolic="YES" id="wzj-zb-X8A"/>
                             <constraint firstItem="uHL-oy-iQh" firstAttribute="top" secondItem="cDH-E6-VCW" secondAttribute="bottom" constant="8" symbolic="YES" id="xA4-n1-d9V"/>
+                            <constraint firstItem="DfS-U7-heK" firstAttribute="trailing" secondItem="cTm-va-ca0" secondAttribute="trailing" id="xWL-Hz-mHh"/>
                             <constraint firstItem="mED-0S-A70" firstAttribute="width" secondItem="zb4-Uy-eZv" secondAttribute="width" id="xrV-mi-w8p"/>
                             <constraint firstItem="cDH-E6-VCW" firstAttribute="height" secondItem="8B2-sX-uLR" secondAttribute="height" constant="9" id="xub-8e-Vkp">
                                 <variation key="heightClass=regular-widthClass=regular" constant="12"/>
                             </constraint>
+                            <constraint firstItem="Hqn-Qh-KpO" firstAttribute="trailing" secondItem="Kdg-AT-z1r" secondAttribute="trailing" id="yl6-x1-bhq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -424,6 +443,10 @@
                                 <exclude reference="LAU-Bx-NGk"/>
                                 <exclude reference="LfW-Xo-leq"/>
                                 <exclude reference="ayQ-Fs-TYy"/>
+                                <exclude reference="Ith-t7-ATf"/>
+                                <exclude reference="WdU-AQ-KgO"/>
+                                <exclude reference="Ytf-Dh-jgU"/>
+                                <exclude reference="gOz-86-5Bf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -436,11 +459,17 @@
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="WPX-eS-k9V"/>
+                                <include reference="WdU-AQ-KgO"/>
+                                <include reference="Ytf-Dh-jgU"/>
+                                <exclude reference="w4A-Ow-a1g"/>
+                                <exclude reference="yl6-x1-bhq"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="aph-Fc-W56"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="deleteButton" destination="Hqn-Qh-KpO" id="hJQ-cV-ckw"/>
                         <outlet property="progress1View" destination="1uW-SQ-X7u" id="68E-gF-IUu"/>
                         <outlet property="progress2View" destination="UZu-oY-yRL" id="Eyj-wG-L7z"/>
                         <outlet property="progress3View" destination="Gz2-Jq-YFV" id="X0n-Z7-ST5"/>
