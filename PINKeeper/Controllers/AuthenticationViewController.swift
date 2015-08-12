@@ -85,13 +85,17 @@ class AuthenticationViewController: UIViewController {
         super.viewWillAppear(animated)
         passCode = ""
         restrictRotationForiPhones()
-        authenticateUserWithTouchID()
     }
     
     private func restrictRotationForiPhones(){
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
             AppDelegate.restrictRotation = true
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        authenticateUserWithTouchID()
     }
     
     private func authenticateUserWithTouchID(){
@@ -170,13 +174,17 @@ class AuthenticationViewController: UIViewController {
     private func checkPasscode(){
         if Authentication.checkPasscode(passCode){
             println("Enter passcode: Success.")
-            performSegueWithIdentifier(showPINsSegueID, sender: self)
+            goToPINs()
         }else{
             println("Enter passcode: Failed!")
             vibrate()
             shakeProgressViews()
             passCode = ""
         }
+    }
+    
+    private func goToPINs(){
+        performSegueWithIdentifier(showPINsSegueID, sender: self)
     }
     
     private func vibrate(){
