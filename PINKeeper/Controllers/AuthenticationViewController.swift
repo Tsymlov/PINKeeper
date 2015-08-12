@@ -35,7 +35,7 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     
     private let showPINsSegueID = "Show PINs"
-    private let context = LAContext()
+    private let authenticationContext = LAContext()
     
     private var progressViews: [UIView]{
         return [progress1View, progress2View, progress3View, progress4View]
@@ -102,16 +102,16 @@ class AuthenticationViewController: UIViewController {
         var error: NSError?
         if !checkIfTouchIDIsAvailable(&error) {
             println("Touch ID is not available")
-            //TODO: Go to the passcode enter.
             return
         }
         
+        authenticationContext.localizedFallbackTitle = "Enter Passcode"
         let reason = "Use your fingerprint to log in."
-        context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
+        authenticationContext.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
             {(succes: Bool, error: NSError!) in
                 if succes {
                     println("Touch ID Authentication Succeeded")
-                    //TODO: Go to the PINs.
+                    self.goToPINs()
                 }
                 else {
                     println("Touch ID Authentication Failed")
@@ -122,7 +122,7 @@ class AuthenticationViewController: UIViewController {
     }
     
     private func checkIfTouchIDIsAvailable(inout error: NSError?)->Bool{
-        return context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error)
+        return authenticationContext.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error)
     }
     
     override func viewDidLayoutSubviews() {
