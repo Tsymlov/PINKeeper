@@ -8,6 +8,7 @@
 
 import UIKit
 import LocalAuthentication
+import AudioToolbox
 
 class AuthenticationViewController: UIViewController {
     
@@ -160,9 +161,14 @@ class AuthenticationViewController: UIViewController {
             println("Success!")
             performSegueWithIdentifier(showPINsSegueID, sender: self)
         }else{
+            vibrate()
             showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
             passCode = ""
         }
+    }
+    
+    private func vibrate(){
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
     @IBAction func deleteTapped(sender: UIButton) {
