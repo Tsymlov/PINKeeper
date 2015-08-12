@@ -26,7 +26,13 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     
     private let context = LAContext()
-    private var passCode = ""
+    private var passCode = ""{
+        didSet{
+            if passCode == "" {
+                enterProgress = 0
+            }
+        }
+    }
     
     private var enterProgress = 0 { //from 0 to 4
         didSet{
@@ -63,10 +69,15 @@ class AuthenticationViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        passCode = ""
+        restrictRotationForiPhones()
+        authenticateUserWithTouchID()
+    }
+    
+    private func restrictRotationForiPhones(){
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
             AppDelegate.restrictRotation = true
         }
-        authenticateUserWithTouchID()
     }
     
     private func authenticateUserWithTouchID(){
@@ -151,7 +162,6 @@ class AuthenticationViewController: UIViewController {
         }else{
             showAlertController("Wrong passcode!") //TODO: Change to animation and vibration.
             passCode = ""
-            enterProgress = 0
         }
     }
     
