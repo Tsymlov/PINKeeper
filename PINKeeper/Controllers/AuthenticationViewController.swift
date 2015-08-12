@@ -26,6 +26,8 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     
     private let context = LAContext()
+    private var passCode = ""
+    
     private var enterProgress = 0 { //from 0 to 4
         didSet{
             enterProgress = min(max(enterProgress, 0), 4)
@@ -131,10 +133,24 @@ class AuthenticationViewController: UIViewController {
     
     @IBAction func digitButtonTapped(sender: UIButton) {
         ++enterProgress
+        passCode += sender.titleLabel?.text ?? ""
+        if enterProgress == 4 {
+            // for debug
+            showAlertController(passCode)
+            passCode = ""
+            enterProgress = 0
+            // TODO: Check passcode and go to PINs
+            
+        }
     }
     
     @IBAction func deleteTapped(sender: UIButton) {
         --enterProgress
+        removeLastCharInPassCode()
+    }
+    
+    private func removeLastCharInPassCode(){
+        passCode.removeAtIndex(passCode.endIndex.predecessor())
     }
 
 }
