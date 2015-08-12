@@ -121,6 +121,10 @@ class AuthenticationViewController: UIViewController {
         AppDelegate.restrictRotation = false
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     // MARK: - Actions
     
     @IBAction func digitButtonTapped(sender: UIButton) {
