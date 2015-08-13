@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30CBB76ADD66D76603D2F3D8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A75787987DFA0EDEA27DE7E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE4D1B7CB153007CC809 /* Settings.swift */; };
 		3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9977731B7B91BB001D2F8C /* Authentication.swift */; };
 		3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */; };
 		3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		3D08DE491B7BA165007CC809 /* PINKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PINKeeper-Bridging-Header.h"; path = "Model/PINKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D08DE4D1B7CB153007CC809 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3D9977731B7B91BB001D2F8C /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		3DC1ADD81B77B23E0022C821 /* PINKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADDC1B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9977731B7B91BB001D2F8C /* Authentication.swift */,
+				3D08DE4D1B7CB153007CC809 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */,
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
+				3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */,
 				3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */,
 				3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */,
 			);
