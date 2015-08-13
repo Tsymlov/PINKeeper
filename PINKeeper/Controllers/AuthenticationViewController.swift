@@ -111,7 +111,7 @@ class AuthenticationViewController: UIViewController {
             {(succes: Bool, error: NSError!) in
                 if succes {
                     println("Touch ID Authentication Succeeded")
-                    self.goToPINs()
+                    dispatch_async(dispatch_get_main_queue()){ self.goToPINs() }
                 }
                 else {
                     println("Touch ID Authentication Failed")
