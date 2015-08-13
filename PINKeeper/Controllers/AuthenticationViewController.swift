@@ -95,7 +95,11 @@ class AuthenticationViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        authenticateUserWithTouchID()
+        if !Settings.isTouchIDBlocked {
+            authenticateUserWithTouchID()
+        }else{
+            println("User authentication with TouchID is blocked. You can use the passcode and activate TouchID after that.")
+        }
     }
     
     private func authenticateUserWithTouchID(){
@@ -104,19 +108,46 @@ class AuthenticationViewController: UIViewController {
             println("Touch ID is not available")
             return
         }
-        
         authenticationContext.localizedFallbackTitle = "Enter Passcode"
+        authenticationContext.maxBiometryFailures = 3
         let reason = "Use your fingerprint to log in."
         authenticationContext.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
             {(succes: Bool, error: NSError!) in
                 if succes {
-                    println("Touch ID Authentication Succeeded")
+                    println("Touch ID Authentication: Succeeded")
                     dispatch_async(dispatch_get_main_queue()){ self.goToPINs() }
                 }
                 else {
-                    println("Touch ID Authentication Failed")
-                    //TODO: Separate reasons of fail.
-                    //TODO: Show the message about blocking touch ID and go to the passcode enter.
+                    if error == nil {
+                        println("Authentication failed but error = nil!")
+                        return
+                    }
+                    println("Touch ID Authentication: Failed!")
+                    println("Error description: \(error!.localizedDescription)")
+                    println("Error code: \(error!.code)")
+                    switch error!.code {
+                    case LAError.SystemCancel.rawValue:
+                        println("Authentication was cancelled by the system")
+                    case LAError.UserCancel.rawValue:
+                        println("Authentication was cancelled by the user")
+                    case LAError.UserFallback.rawValue:
+                        println("User selected to enter passcode.")
+                    case LAError.AuthenticationFailed.rawValue:
+                        println("Authentication failed! Description: \(error!.localizedDescription)")
+                        Settings.isTouchIDBlocked = true
+                        println("TouchID blocked successfully.")
+                        dispatch_async(dispatch_get_main_queue()){
+                            self.showAlertController("Touch ID is locked out. You can use the passcode and activate TouchID after that.")
+                        }
+                    case LAError.PasscodeNotSet.rawValue:
+                        println("Passcode is not set.")
+                    case LAError.TouchIDNotAvailable.rawValue:
+                        println("Touch ID is not available during evaluate policy.")
+                    case LAError.TouchIDNotEnrolled.rawValue:
+                        println("Touch ID is not enrolled.")
+                    default:
+                        println("Touch ID Authentication failed with unknown error code.")
+                    }
                 }
         })
     }
