@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D08DE491B7BA165007CC809 /* PINKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PINKeeper-Bridging-Header.h"; path = "Model/PINKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D08DE491B7BA165007CC809 /* PINKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PINKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D08DE4D1B7CB153007CC809 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsTableViewController.swift; sourceTree = "<group>"; };
 		3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINDetailTableViewController.swift; sourceTree = "<group>"; };
