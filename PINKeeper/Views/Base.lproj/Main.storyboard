@@ -500,12 +500,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="scw-PZ-mOs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PINTableViewCell" id="scw-PZ-mOs" customClass="PINTableViewCell" customModule="PINKeeper" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scw-PZ-mOs" id="Sec-1m-NHW">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="m5E-bg-Grb" userLabel="Card Image">
+                                            <rect key="frame" x="8" y="8" width="32" height="27.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="0PW-hk-klc"/>
+                                                <constraint firstAttribute="height" constant="28" id="Wtf-1B-EjQ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu ipsum nisi. Cras nec hendrerit est. Sed libero nibh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26f-8q-He9" userLabel="Title">
+                                            <rect key="frame" x="48" y="11.5" width="428" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anE-k2-hia" userLabel="PIN">
+                                            <rect key="frame" x="484" y="7.5" width="75" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="CNI-Do-VrP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="26f-8q-He9" firstAttribute="leading" secondItem="m5E-bg-Grb" secondAttribute="trailing" constant="8" symbolic="YES" id="QIe-Gk-ZpX"/>
+                                        <constraint firstItem="anE-k2-hia" firstAttribute="trailing" secondItem="Sec-1m-NHW" secondAttribute="trailingMargin" id="TR9-NV-Zkz"/>
+                                        <constraint firstAttribute="centerY" secondItem="m5E-bg-Grb" secondAttribute="centerY" id="gIQ-ZF-3Pv"/>
+                                        <constraint firstItem="anE-k2-hia" firstAttribute="leading" secondItem="26f-8q-He9" secondAttribute="trailing" constant="8" symbolic="YES" id="gOf-Xa-DHU"/>
+                                        <constraint firstItem="m5E-bg-Grb" firstAttribute="leading" secondItem="Sec-1m-NHW" secondAttribute="leadingMargin" id="iwr-uK-Grn"/>
+                                        <constraint firstAttribute="centerY" secondItem="26f-8q-He9" secondAttribute="centerY" id="swW-II-fMf"/>
+                                        <constraint firstAttribute="centerY" secondItem="anE-k2-hia" secondAttribute="centerY" id="v4G-Dq-aBo"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="pinLabel" destination="anE-k2-hia" id="1EL-ET-8G1"/>
+                                    <outlet property="titleLabel" destination="26f-8q-He9" id="UmX-DX-WAw"/>
                                     <segue destination="sBU-Yn-Ud4" kind="show" identifier="Show Detail of PIN" id="X2s-Oa-Iof"/>
                                 </connections>
                             </tableViewCell>
@@ -567,5 +602,6 @@
     </scenes>
     <resources>
         <image name="AuthBackground" width="1200" height="800"/>
+        <image name="Card" width="170" height="170"/>
     </resources>
 </document>

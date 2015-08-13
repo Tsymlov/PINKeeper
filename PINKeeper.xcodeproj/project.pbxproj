@@ -11,6 +11,8 @@
 		3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE4D1B7CB153007CC809 /* Settings.swift */; };
 		3D08DE501B7CC4A3007CC809 /* PINsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */; };
 		3D08DE521B7CC515007CC809 /* PINDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */; };
+		3D08DE541B7CCEEC007CC809 /* PINsTable.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D08DE531B7CCEEC007CC809 /* PINsTable.xcassets */; };
+		3D08DE561B7CD199007CC809 /* PINTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE551B7CD199007CC809 /* PINTableViewCell.swift */; };
 		3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9977731B7B91BB001D2F8C /* Authentication.swift */; };
 		3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */; };
 		3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */; };
@@ -38,6 +40,8 @@
 		3D08DE4D1B7CB153007CC809 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsTableViewController.swift; sourceTree = "<group>"; };
 		3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINDetailTableViewController.swift; sourceTree = "<group>"; };
+		3D08DE531B7CCEEC007CC809 /* PINsTable.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PINsTable.xcassets; sourceTree = "<group>"; };
+		3D08DE551B7CD199007CC809 /* PINTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINTableViewCell.swift; sourceTree = "<group>"; };
 		3D9977731B7B91BB001D2F8C /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		3DC1ADD81B77B23E0022C821 /* PINKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADDC1B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 			children = (
 				3DC1ADE11B77B23E0022C821 /* Main.storyboard */,
 				3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */,
+				3D08DE551B7CD199007CC809 /* PINTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			children = (
 				3DC1ADE41B77B23E0022C821 /* Images.xcassets */,
 				3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */,
+				3D08DE531B7CCEEC007CC809 /* PINsTable.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D08DE541B7CCEEC007CC809 /* PINsTable.xcassets in Resources */,
 				3DC1ADE31B77B23E0022C821 /* Main.storyboard in Resources */,
 				3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */,
 				3DC1ADE51B77B23E0022C821 /* Images.xcassets in Resources */,
@@ -353,6 +360,7 @@
 			files = (
 				3DC1AE041B77C2130022C821 /* UIViewController+Allerts.swift in Sources */,
 				3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */,
+				3D08DE561B7CD199007CC809 /* PINTableViewCell.swift in Sources */,
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
 				3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */,
