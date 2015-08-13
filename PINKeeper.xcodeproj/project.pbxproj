@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		30CBB76ADD66D76603D2F3D8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A75787987DFA0EDEA27DE7E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE4D1B7CB153007CC809 /* Settings.swift */; };
+		3D08DE501B7CC4A3007CC809 /* PINsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */; };
+		3D08DE521B7CC515007CC809 /* PINDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */; };
 		3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9977731B7B91BB001D2F8C /* Authentication.swift */; };
 		3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */; };
 		3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */; };
@@ -16,7 +18,6 @@
 		3DC1ADE51B77B23E0022C821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE41B77B23E0022C821 /* Images.xcassets */; };
 		3DC1ADE81B77B23E0022C821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1ADE61B77B23E0022C821 /* LaunchScreen.xib */; };
 		3DC1ADF41B77B23E0022C821 /* PINKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */; };
-		3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */; };
 		3DC1AE041B77C2130022C821 /* UIViewController+Allerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE031B77C2130022C821 /* UIViewController+Allerts.swift */; };
 		3DC1AE0B1B78F4E80022C821 /* Authentication.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */; };
 		3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		3D08DE491B7BA165007CC809 /* PINKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PINKeeper-Bridging-Header.h"; path = "Model/PINKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D08DE4D1B7CB153007CC809 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsTableViewController.swift; sourceTree = "<group>"; };
+		3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINDetailTableViewController.swift; sourceTree = "<group>"; };
 		3D9977731B7B91BB001D2F8C /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		3DC1ADD81B77B23E0022C821 /* PINKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADDC1B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		3DC1ADED1B77B23E0022C821 /* PINKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADF21B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC1ADF31B77B23E0022C821 /* PINKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINKeeperTests.swift; sourceTree = "<group>"; };
-		3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINsViewController.swift; sourceTree = "<group>"; };
 		3DC1AE031B77C2130022C821 /* UIViewController+Allerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Allerts.swift"; sourceTree = "<group>"; };
 		3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Authentication.xcassets; sourceTree = "<group>"; };
 		3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedBorder.swift"; sourceTree = "<group>"; };
@@ -156,7 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */,
-				3DC1ADFF1B77B5E80022C821 /* PINsViewController.swift */,
+				3D08DE4F1B7CC4A3007CC809 /* PINsTableViewController.swift */,
+				3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,7 +356,8 @@
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
 				3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */,
 				3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */,
-				3DC1AE001B77B5E80022C821 /* PINsViewController.swift in Sources */,
+				3D08DE501B7CC4A3007CC809 /* PINsTableViewController.swift in Sources */,
+				3D08DE521B7CC515007CC809 /* PINDetailTableViewController.swift in Sources */,
 				3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -484,30 +484,67 @@
                         <outletCollection property="digitButtons" destination="0yi-ky-aVN" collectionClass="NSMutableArray" id="zQe-bQ-Tvz"/>
                         <outletCollection property="digitButtons" destination="Kdg-AT-z1r" collectionClass="NSMutableArray" id="7Fk-z5-oE4"/>
                         <outletCollection property="digitButtons" destination="9Iq-rN-r11" collectionClass="NSMutableArray" id="fYN-LR-6su"/>
-                        <segue destination="h2o-Bl-tY5" kind="show" identifier="Show PINs" id="Qj6-td-9Uj"/>
+                        <segue destination="djd-Jv-GG5" kind="show" identifier="Show PINs" id="LAS-hT-dSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1147" y="389"/>
         </scene>
-        <!--PINs View Controller-->
-        <scene sceneID="7aO-NE-DD9">
+        <!--PINs Table View Controller-->
+        <scene sceneID="czJ-HJ-Enr">
             <objects>
-                <viewController id="h2o-Bl-tY5" userLabel="PINs View Controller" customClass="PINsViewController" customModule="PINKeeper" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vdw-jt-J3f"/>
-                        <viewControllerLayoutGuide type="bottom" id="bPn-Me-ikO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BIN-wR-nxn">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                <tableViewController id="djd-Jv-GG5" userLabel="PINs Table View Controller" customClass="PINsTableViewController" customModule="PINKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="991-6I-zkb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Df5-yf-dj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="scw-PZ-mOs">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scw-PZ-mOs" id="Sec-1m-NHW">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sBU-Yn-Ud4" kind="show" identifier="Show Detail of PIN" id="X2s-Oa-Iof"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="djd-Jv-GG5" id="MyM-38-Qak"/>
+                            <outlet property="delegate" destination="djd-Jv-GG5" id="9MO-FQ-OpW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuj-DZ-BTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="389"/>
+            <point key="canvasLocation" x="1887" y="389"/>
+        </scene>
+        <!--Detail Table View Controller-->
+        <scene sceneID="n7x-lW-7Vt">
+            <objects>
+                <tableViewController id="sBU-Yn-Ud4" customClass="PINDetailTableViewController" customModule="PINKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aTc-3t-cAs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ljd-WF-qbB">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ljd-WF-qbB" id="cEm-rL-eWd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sBU-Yn-Ud4" id="K4e-87-VhM"/>
+                            <outlet property="delegate" destination="sBU-Yn-Ud4" id="7FH-G4-fPI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cD-0i-fXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2603" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pgs-wX-9vu">
