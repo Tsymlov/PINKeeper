@@ -492,7 +492,7 @@
 				INFOPLIST_FILE = PINKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PINKeeper/Model/PINKeeper-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PINKeeper/PINKeeper-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -506,7 +506,7 @@
 				INFOPLIST_FILE = PINKeeper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PINKeeper/Model/PINKeeper-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PINKeeper/PINKeeper-Bridging-Header.h";
 			};
 			name = Release;
 		};
