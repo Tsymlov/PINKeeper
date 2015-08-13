@@ -85,6 +85,7 @@ class AuthenticationViewController: UIViewController {
         super.viewWillAppear(animated)
         passCode = ""
         restrictRotationForiPhones()
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     private func restrictRotationForiPhones(){
@@ -182,6 +183,11 @@ class AuthenticationViewController: UIViewController {
         for view in progressViews{
             view.roundedBorder = true
         }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewDidDisappear(animated: Bool) {

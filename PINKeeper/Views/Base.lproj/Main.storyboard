@@ -468,6 +468,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aph-Fc-W56"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="deleteButton" destination="Hqn-Qh-KpO" id="hJQ-cV-ckw"/>
                         <outlet property="progress1View" destination="1uW-SQ-X7u" id="68E-gF-IUu"/>
@@ -550,6 +551,7 @@
                             <outlet property="delegate" destination="djd-Jv-GG5" id="9MO-FQ-OpW"/>
                         </connections>
                     </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuj-DZ-BTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -584,7 +586,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Pgs-wX-9vu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ljX-EW-7hg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljX-EW-7hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ziI-2K-vvD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
