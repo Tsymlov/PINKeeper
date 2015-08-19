@@ -23,6 +23,7 @@
 		3DC1AE041B77C2130022C821 /* UIViewController+Allerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE031B77C2130022C821 /* UIViewController+Allerts.swift */; };
 		3DC1AE0B1B78F4E80022C821 /* Authentication.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */; };
 		3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */; };
+		3DE63E7C1B84C124006AD411 /* PIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE63E7B1B84C124006AD411 /* PIN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3DC1AE031B77C2130022C821 /* UIViewController+Allerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Allerts.swift"; sourceTree = "<group>"; };
 		3DC1AE0A1B78F4E80022C821 /* Authentication.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Authentication.xcassets; sourceTree = "<group>"; };
 		3DC1AE0C1B79029A0022C821 /* UIView+RoundedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedBorder.swift"; sourceTree = "<group>"; };
+		3DE63E7B1B84C124006AD411 /* PIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIN.swift; sourceTree = "<group>"; };
 		5866D5D393B9D180C830AFBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		873A8556A8EF787C428D1A12 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A75787987DFA0EDEA27DE7E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 			children = (
 				3D9977731B7B91BB001D2F8C /* Authentication.swift */,
 				3D08DE4D1B7CB153007CC809 /* Settings.swift */,
+				3DE63E7B1B84C124006AD411 /* PIN.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC1AE041B77C2130022C821 /* UIViewController+Allerts.swift in Sources */,
+				3DE63E7C1B84C124006AD411 /* PIN.swift in Sources */,
 				3DC1AE0D1B79029A0022C821 /* UIView+RoundedBorder.swift in Sources */,
 				3D08DE561B7CD199007CC809 /* PINTableViewCell.swift in Sources */,
 				3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */,
