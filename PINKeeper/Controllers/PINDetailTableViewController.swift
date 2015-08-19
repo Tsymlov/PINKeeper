@@ -9,9 +9,24 @@
 import UIKit
 
 class PINDetailTableViewController: UITableViewController {
+    
+    @IBOutlet weak var descriptionField: UITextField!
+    @IBOutlet weak var pinField: UITextField!
+    
+    var pin: PIN? {
+        didSet{
+            refreshUI()
+        }
+    }
+    
+    private func refreshUI(){
+        descriptionField?.text = pin?.description
+        pinField?.text = pin?.value
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshUI()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,7 +41,8 @@ class PINDetailTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    
+    /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -38,6 +54,7 @@ class PINDetailTableViewController: UITableViewController {
         // Return the number of rows in the section.
         return 0
     }
+    */
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
