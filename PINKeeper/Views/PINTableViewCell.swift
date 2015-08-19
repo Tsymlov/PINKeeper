@@ -11,8 +11,27 @@ import UIKit
 class PINTableViewCell: UITableViewCell {
 
     static let reuseID = "PINTableViewCell"
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var pinLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!{
+        didSet{
+            refreshUI()
+        }
+    }
+    @IBOutlet weak var pinLabel: UILabel!{
+        didSet{
+            refreshUI()
+        }
+    }
+    
+    var pin: PIN?{
+        didSet{
+            refreshUI()
+        }
+    }
+    
+    private func refreshUI(){
+        titleLabel?.text = pin?.description
+        pinLabel?.text = pin?.value
+    }
 
     override func prepareForReuse() {
         titleLabel.text = ""
