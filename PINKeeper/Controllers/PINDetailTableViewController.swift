@@ -15,7 +15,7 @@ class PINDetailTableViewController: UITableViewController {
             descriptionField.delegate = self
         }
     }
-    @IBOutlet weak var pinField: UITextField!
+    @IBOutlet weak var pinField: REFormattedNumberField!
     
     var pin: PIN? {
         didSet{
@@ -26,6 +26,7 @@ class PINDetailTableViewController: UITableViewController {
     private func refreshUI(){
         descriptionField?.text = pin?.description
         pinField?.text = pin?.value
+        pinField.format = "XXXX"
     }
 
     override func viewDidLoad() {
