@@ -10,7 +10,11 @@ import UIKit
 
 class PINDetailTableViewController: UITableViewController {
     
-    @IBOutlet weak var descriptionField: UITextField!
+    @IBOutlet weak var descriptionField: UITextField! {
+        didSet{
+            descriptionField.delegate = self
+        }
+    }
     @IBOutlet weak var pinField: UITextField!
     
     var pin: PIN? {
@@ -34,12 +38,13 @@ class PINDetailTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    // MARK: - Actions
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func viewTapped(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
-
+    
     // MARK: - Table view data source
     
     /*
@@ -110,5 +115,12 @@ class PINDetailTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension PINDetailTableViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(sender: UITextField) -> Bool{
+        if sender != descriptionField { return true }
+        sender.resignFirstResponder()
+        return true
+    }
 }
