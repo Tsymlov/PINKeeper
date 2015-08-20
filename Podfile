@@ -7,3 +7,4 @@ platform :ios, '8.4'
 use_frameworks!
 
 pod 'UIView+Shake'
+pod 'REFormattedNumberField', '~> 1.1.5'
