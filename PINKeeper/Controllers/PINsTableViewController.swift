@@ -10,7 +10,11 @@ import UIKit
 
 class PINsTableViewController: UITableViewController {
     
-    private var pins = [[PIN]]()
+    private struct Storyboard {
+        static let showNewPINDetailsSegueID = "Show New PIN Details"
+    }
+    
+    private var pins = [[PIN]()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +29,7 @@ class PINsTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.setHidesBackButton(true, animated: false)
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -78,15 +83,25 @@ class PINsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == nil {
+            println("Error! Unknown nil segue identifier.")
+            return
+        }
+        switch segue.identifier!{
+        case Storyboard.showNewPINDetailsSegueID:
+            let newPIN = PIN()
+            pins[0].append(newPIN)
+            (segue.destinationViewController as! PINDetailTableViewController).pin = newPIN
+        default:
+            break
+            
+        }
     }
-    */
+
     
     // MARK: - Actions
 

@@ -554,7 +554,7 @@
                     <navigationItem key="navigationItem" title="PINs" id="2fO-np-Qg7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SDT-fb-OU7">
                             <connections>
-                                <segue destination="sBU-Yn-Ud4" kind="show" id="B2V-IH-1Op"/>
+                                <segue destination="sBU-Yn-Ud4" kind="show" identifier="Show New PIN Details" id="B2V-IH-1Op"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -678,6 +678,6 @@
         <image name="Card" width="170" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X2s-Oa-Iof"/>
+        <segue reference="B2V-IH-1Op"/>
     </inferredMetricsTieBreakers>
 </document>

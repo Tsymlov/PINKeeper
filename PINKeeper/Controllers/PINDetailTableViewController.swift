@@ -26,7 +26,7 @@ class PINDetailTableViewController: UITableViewController {
     private func refreshUI(){
         descriptionField?.text = pin?.description
         pinField?.text = pin?.value
-        pinField.format = "XXXX"
+        pinField?.format = "XXXX"
     }
 
     override func viewDidLoad() {
@@ -38,6 +38,17 @@ class PINDetailTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        descriptionField.becomeFirstResponder()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        pin?.description = descriptionField.text ?? ""
+        pin?.value = pinField.text ?? ""
     }
     
     // MARK: - Actions
