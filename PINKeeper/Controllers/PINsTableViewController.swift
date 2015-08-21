@@ -12,6 +12,7 @@ class PINsTableViewController: UITableViewController {
     
     private struct Storyboard {
         static let showNewPINDetailsSegueID = "Show New PIN Details"
+        static let showDetailsOfPINSegueID = "Show Details of PIN"
     }
     
     private var pins = [[PIN]()]
@@ -96,6 +97,11 @@ class PINsTableViewController: UITableViewController {
             let newPIN = PIN()
             pins[0].append(newPIN)
             (segue.destinationViewController as! PINDetailTableViewController).pin = newPIN
+        case Storyboard.showDetailsOfPINSegueID:
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPathForCell(cell)!
+            let pin = pins[indexPath.section][indexPath.row]
+            (segue.destinationViewController as! PINDetailTableViewController).pin = pin
         default:
             break
             

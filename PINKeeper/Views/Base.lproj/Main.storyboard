@@ -542,7 +542,7 @@
                                 <connections>
                                     <outlet property="pinLabel" destination="anE-k2-hia" id="1EL-ET-8G1"/>
                                     <outlet property="titleLabel" destination="26f-8q-He9" id="UmX-DX-WAw"/>
-                                    <segue destination="sBU-Yn-Ud4" kind="show" identifier="Show Detail of PIN" id="X2s-Oa-Iof"/>
+                                    <segue destination="sBU-Yn-Ud4" kind="show" identifier="Show Details of PIN" id="X2s-Oa-Iof"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -678,6 +678,6 @@
         <image name="Card" width="170" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B2V-IH-1Op"/>
+        <segue reference="X2s-Oa-Iof"/>
     </inferredMetricsTieBreakers>
 </document>
