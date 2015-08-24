@@ -8,3 +8,4 @@ use_frameworks!
 
 pod 'UIView+Shake'
 pod 'REFormattedNumberField'
+pod 'MagicalRecord'
