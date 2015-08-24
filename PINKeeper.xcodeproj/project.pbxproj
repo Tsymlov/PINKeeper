@@ -13,6 +13,7 @@
 		3D08DE521B7CC515007CC809 /* PINDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */; };
 		3D08DE541B7CCEEC007CC809 /* PINsTable.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D08DE531B7CCEEC007CC809 /* PINsTable.xcassets */; };
 		3D08DE561B7CD199007CC809 /* PINTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08DE551B7CD199007CC809 /* PINTableViewCell.swift */; };
+		3D1C60761B8B08CE00C56190 /* PINKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C60741B8B08CE00C56190 /* PINKeeper.xcdatamodeld */; };
 		3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9977731B7B91BB001D2F8C /* Authentication.swift */; };
 		3DC1ADDE1B77B23E0022C821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDD1B77B23E0022C821 /* AppDelegate.swift */; };
 		3DC1ADE01B77B23E0022C821 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1ADDF1B77B23E0022C821 /* AuthenticationViewController.swift */; };
@@ -43,6 +44,7 @@
 		3D08DE511B7CC515007CC809 /* PINDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINDetailTableViewController.swift; sourceTree = "<group>"; };
 		3D08DE531B7CCEEC007CC809 /* PINsTable.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PINsTable.xcassets; sourceTree = "<group>"; };
 		3D08DE551B7CD199007CC809 /* PINTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PINTableViewCell.swift; sourceTree = "<group>"; };
+		3D1C60751B8B08CE00C56190 /* PINKeeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PINKeeper.xcdatamodel; sourceTree = "<group>"; };
 		3D9977731B7B91BB001D2F8C /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		3DC1ADD81B77B23E0022C821 /* PINKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC1ADDC1B77B23E0022C821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				3D9977731B7B91BB001D2F8C /* Authentication.swift */,
 				3D08DE4D1B7CB153007CC809 /* Settings.swift */,
 				3DE63E7B1B84C124006AD411 /* PIN.swift */,
+				3D1C60741B8B08CE00C56190 /* PINKeeper.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				3D08DE4E1B7CB153007CC809 /* Settings.swift in Sources */,
 				3D08DE501B7CC4A3007CC809 /* PINsTableViewController.swift in Sources */,
 				3D08DE521B7CC515007CC809 /* PINDetailTableViewController.swift in Sources */,
+				3D1C60761B8B08CE00C56190 /* PINKeeper.xcdatamodeld in Sources */,
 				3D9977741B7B91BB001D2F8C /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +606,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D1C60741B8B08CE00C56190 /* PINKeeper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D1C60751B8B08CE00C56190 /* PINKeeper.xcdatamodel */,
+			);
+			currentVersion = 3D1C60751B8B08CE00C56190 /* PINKeeper.xcdatamodel */;
+			path = PINKeeper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DC1ADD01B77B23E0022C821 /* Project object */;
 }

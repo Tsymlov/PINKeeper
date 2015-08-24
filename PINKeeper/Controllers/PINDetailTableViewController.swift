@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagicalRecord
 
 class PINDetailTableViewController: UITableViewController {
     
@@ -24,7 +25,7 @@ class PINDetailTableViewController: UITableViewController {
     }
     
     private func refreshUI(){
-        descriptionField?.text = pin?.description
+        descriptionField?.text = pin?.desc
         pinField?.text = pin?.value
         pinField?.format = "XXXX"
     }
@@ -41,14 +42,21 @@ class PINDetailTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillDisappear(animated)
+        super.viewWillAppear(animated)
         descriptionField.becomeFirstResponder()
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        pin?.description = descriptionField.text ?? ""
+        pin?.desc = descriptionField.text ?? ""
         pin?.value = pinField.text ?? ""
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreWithCompletion { (success, error) -> Void in
+            if success {
+                println("Data saved successful.")
+            }else{
+                println("Error! Data saving failed with error: \(error?.localizedDescription)")
+            }
+        }
     }
     
     // MARK: - Actions

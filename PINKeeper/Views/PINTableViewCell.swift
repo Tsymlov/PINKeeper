@@ -29,7 +29,7 @@ class PINTableViewCell: UITableViewCell {
     }
     
     private func refreshUI(){
-        titleLabel?.text = pin?.description
+        titleLabel?.text = pin?.desc
         pinLabel?.text = pin?.value
     }
 

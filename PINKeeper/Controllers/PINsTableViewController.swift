@@ -19,7 +19,8 @@ class PINsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.pins[0] = PIN.MR_findAll() as! [PIN]
+        println("Found \(pins[0].count) records in database")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -94,7 +95,7 @@ class PINsTableViewController: UITableViewController {
         }
         switch segue.identifier!{
         case Storyboard.showNewPINDetailsSegueID:
-            let newPIN = PIN()
+            let newPIN = PIN.MR_createEntity()
             pins[0].append(newPIN)
             (segue.destinationViewController as! PINDetailTableViewController).pin = newPIN
         case Storyboard.showDetailsOfPINSegueID:

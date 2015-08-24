@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import CoreData
 
-class PIN {
-    var description = ""
-    var value = ""
+@objc(PIN)
+class PIN: NSManagedObject {
+    @NSManaged var desc: String!
+    @NSManaged var value: String!
 }
