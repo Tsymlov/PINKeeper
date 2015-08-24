@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PINsTableViewController: UITableViewController {
     
@@ -66,6 +67,7 @@ class PINsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             pins[indexPath.section][indexPath.row].MR_deleteEntity()
+            saveData()
             refreshData()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
@@ -73,6 +75,15 @@ class PINsTableViewController: UITableViewController {
         }    
     }
     
+    private func saveData(){
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreWithCompletion { (success, error) -> Void in
+            if success {
+                println("Data saved successful.")
+            }else{
+                println("Error! Data saving failed with error: \(error?.localizedDescription)")
+            }
+        }
+    }
 
     /*
     // Override to support rearranging the table view.
