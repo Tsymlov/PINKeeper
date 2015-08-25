@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import CryptoSwift
 
 class Authentication{
     class func checkPasscode(passCode: String)->Bool{
-        return passCode == "0000"
+        return passCode.sha512() == passCodeHash
     }
+    
+    static var passCodeHash: String! { return "0000".sha512() }
 }
