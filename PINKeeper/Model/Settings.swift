@@ -10,7 +10,7 @@ import Foundation
 
 class Settings {
     
-    struct Constants {
+    private struct Constants {
         struct UserDefaultsKeys {
             static let isTouchIDBlockedKey = "com.alexeytsymlov.PINKeeper.Settings.isTouchIDBlocked"
         }
