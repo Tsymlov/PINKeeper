@@ -34,7 +34,6 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var progress4View: UIView!
     @IBOutlet weak var deleteButton: UIButton!
     
-    private let showPINsSegueID = "Show PINs"
     private let authenticationContext = LAContext()
     
     private var progressViews: [UIView]{
@@ -116,7 +115,7 @@ class AuthenticationViewController: UIViewController {
             {(succes: Bool, error: NSError!) in
                 if succes {
                     println("Touch ID Authentication: Succeeded")
-                    dispatch_async(dispatch_get_main_queue()){ self.goToPINs() }
+                    dispatch_async(dispatch_get_main_queue()){ self.dismissViewControllerAnimated(true, completion: nil) }
                 }
                 else {
                     if error == nil {
@@ -211,17 +210,13 @@ class AuthenticationViewController: UIViewController {
     private func checkPasscode(){
         if Authentication.checkPasscode(passCode){
             println("Enter passcode: Success.")
-            goToPINs()
+            dismissViewControllerAnimated(true, completion: nil)
         }else{
             println("Enter passcode: Failed!")
             vibrate()
             shakeProgressViews()
             passCode = ""
         }
-    }
-    
-    private func goToPINs(){
-        performSegueWithIdentifier(showPINsSegueID, sender: self)
     }
     
     private func vibrate(){
