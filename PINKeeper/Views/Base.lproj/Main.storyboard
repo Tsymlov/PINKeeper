@@ -485,12 +485,11 @@
                         <outletCollection property="digitButtons" destination="0yi-ky-aVN" collectionClass="NSMutableArray" id="zQe-bQ-Tvz"/>
                         <outletCollection property="digitButtons" destination="Kdg-AT-z1r" collectionClass="NSMutableArray" id="7Fk-z5-oE4"/>
                         <outletCollection property="digitButtons" destination="9Iq-rN-r11" collectionClass="NSMutableArray" id="fYN-LR-6su"/>
-                        <segue destination="djd-Jv-GG5" kind="show" identifier="Show PINs" id="LAS-hT-dSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1147" y="389"/>
+            <point key="canvasLocation" x="1159" y="1121"/>
         </scene>
         <!--PINs Table View Controller-->
         <scene sceneID="czJ-HJ-Enr">
@@ -665,12 +664,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Moo-RB-k3i"/>
+                        <segue destination="djd-Jv-GG5" kind="relationship" relationship="rootViewController" id="cXm-hB-YPG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdD-Cr-7DX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="467" y="389"/>
+            <point key="canvasLocation" x="1159" y="389"/>
         </scene>
     </scenes>
     <resources>
