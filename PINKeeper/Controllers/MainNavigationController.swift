@@ -11,13 +11,13 @@ import UIKit
 class MainNavigationController: UINavigationController {
 
     override func viewDidLoad() {
-        addObserverForForegroundEvent()
+        addObserverForRisigningActiveEvent()
         addObserverForLaunchingEvent()
     }
     
-    private func addObserverForForegroundEvent(){
+    private func addObserverForRisigningActiveEvent(){
         let center = NSNotificationCenter.defaultCenter()
-        center.addObserverForName(UIApplicationWillEnterForegroundNotification, object: UIApplication.sharedApplication(), queue: NSOperationQueue.mainQueue()){ notification in
+        center.addObserverForName(UIApplicationWillResignActiveNotification, object: UIApplication.sharedApplication(), queue: NSOperationQueue.mainQueue()){ notification in
             println("App will enter foreground!!!!")
             self.showAuthenticationViewController()
         }
